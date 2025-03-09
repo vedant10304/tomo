@@ -1,0 +1,151 @@
+/* Updated Footer Styles */
+.footer {
+    width: 100%;
+    background-color: #1F1F1F;
+    color: #E0E0E0;
+    padding: 3rem 5rem;
+    font-family: Arial, sans-serif;
+}
+
+.sec1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logoBox {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FF4C60;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filterBox {
+    margin-right: 15px;
+    padding: 8px 12px;
+    border: 1px solid #FF4C60;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: #FF4C60;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filterBox:hover {
+    background-color: #FF4C60;
+    color: #FFF;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.sec2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxTtl {
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FF4C60;
+}
+
+.boxOpt {
+    margin: 5px 0;
+    text-decoration: none;
+    color: #B0B0B0;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.boxOpt:hover {
+    color: #FF4C60;
+}
+
+.socialImg {
+    width: 22px;
+    height: 22px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.socialImg:hover {
+    transform: scale(1.1);
+}
+
+.app {
+    width: 150px;
+    height: 40px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.appImg {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.appImg:hover {
+    transform: scale(1.05);
+}
+
+.breakLine {
+    margin: 25px 0;
+    border-top: 1px solid #505050;
+}
+
+.sec3 {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #A0A0A0;
+}
+
+/* Responsive Adjustments */
+@media all and (max-width: 800px) {
+    .sec1, .sec2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .box {
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .footer {
+        padding: 2rem 3rem;
+    }
+    .box {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 350px) {
+    .footer {
+        padding: 1.5rem 2rem;
+    }
+}

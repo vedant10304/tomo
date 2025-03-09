@@ -1,0 +1,156 @@
+.outerDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8000;
+    background-color: rgba(20, 20, 20, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.modal {
+    width: 450px;
+    padding: 25px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    color: #f0f0f0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ttl {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+.closeBtn {
+    font-weight: 700;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.closeBtnImg {
+    width: 100%;
+    height: 100%;
+}
+
+.lgBox {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.phoneInp,
+.btn {
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    font-size: 1.1rem;
+}
+
+.btn {
+    margin: 10px 0;
+    background-color: #ff4c4c;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #e03b3b;
+}
+
+.Sbtn {
+    background-color: #ff6b6b;
+}
+
+.orBreak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #b0b0b0;
+}
+
+.orBreak::before,
+.orBreak::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #444;
+}
+
+.orBreakText {
+    margin: 0 10px;
+}
+
+.socialSignupBox {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.socialSignupBox:hover {
+    background-color: #3a3a3a;
+}
+
+.icon {
+    width: 35px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+.break {
+    border-top: 1px solid #444;
+    margin: 20px 0;
+}
+
+.newToZomato {
+    color: #e0e0e0;
+    display: flex;
+}
+
+.createAcc {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ff4c4c;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.createAcc:hover {
+    text-decoration: underline;
+}
+
+@media all and (max-width: 420px) {
+    .modal {
+        margin-top: 4rem;
+        width: 100%;
+        height: max-content;
+        padding: 20px;
+    }
+}

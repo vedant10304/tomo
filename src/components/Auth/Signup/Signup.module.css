@@ -1,0 +1,162 @@
+.outerDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8000;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.modal {
+    width: 450px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ttl {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+.closeBtn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.lgBox {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.inpBox,
+.btn {
+    margin: 8px 0;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    outline: none;
+    font-size: 1rem;
+    color: #333333;
+}
+
+.termsTxt {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+.checkBox {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    accent-color: #ff4f5e;
+    cursor: pointer;
+}
+
+.termaAnchor {
+    text-decoration: none;
+    color: #ff4f5e;
+    font-weight: 500;
+}
+
+.btn {
+    background-color: #ff4f5e;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #e04352;
+}
+
+.orBreak {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.orBreak::before,
+.orBreak::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #cccccc;
+}
+
+.orBreakText {
+    margin: 0 15px;
+    color: #666666;
+}
+
+.socialSignupBox {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.socialSignupBox:hover {
+    background-color: #f5f5f5;
+}
+
+.icon {
+    width: 30px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.break {
+    border-top: 1px solid #cccccc;
+    margin: 20px 0;
+}
+
+.newToZomato {
+    color: #333333;
+    display: flex;
+    justify-content: center;
+}
+
+.createAcc {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #ff4f5e;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.createAcc:hover {
+    text-decoration: underline;
+}
+
+@media all and (max-width: 420px) {
+    .modal {
+        width: 90%;
+        margin-top: 6rem;
+    }
+}

@@ -1,0 +1,53 @@
+.outerDiv {
+    width: 100%;
+    margin: 3rem 0;
+    padding: 1rem 0;
+    background-color: var(--bg-light-gray); /* Subtle background for contrast */
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.titleTxt {
+    font-size: var(--font-title-sz1);
+    font-weight: var(--font-title-weight);
+    color: var(--color-dark-blue); /* Modern, professional color */
+}
+
+.bld {
+    font-size: var(--font-title-sz1);
+    font-weight: 700;
+    color: var(--color-primary); /* Primary brand color for emphasis */
+}
+
+.placesCards {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem; /* Better spacing between cards */
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+    .outerDiv {
+        margin: 2rem 0;
+        padding: 0.5rem 0;
+    }
+
+    .titleTxt,
+    .bld {
+        font-size: var(--font-title-sz2);
+    }
+}
+
+@media (max-width: 480px) {
+    .titleTxt,
+    .bld {
+        font-size: 1.5rem;
+    }
+}

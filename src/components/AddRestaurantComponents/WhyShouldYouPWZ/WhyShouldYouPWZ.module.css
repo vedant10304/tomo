@@ -1,0 +1,54 @@
+/* Outer Container */
+.outerDiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerDiv {
+    width: 60%;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--color-title-text);
+    margin-bottom: 1rem;
+}
+
+.tagLine {
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+    color: var(--color-p1-text);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 780px) {
+    .innerDiv {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .tagLine {
+        font-size: 1.1rem;
+        margin: 1.3rem 0;
+    }
+}

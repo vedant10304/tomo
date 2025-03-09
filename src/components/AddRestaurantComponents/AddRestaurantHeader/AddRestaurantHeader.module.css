@@ -1,0 +1,146 @@
+/* Banner Section */
+.banner {
+    width: 100%;
+    height: 25rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.bannerInner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bannerImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bannerTxt {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 2rem;
+    left: 5%;
+    color: var(--color-white);
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.tag {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+.bld {
+    font-weight: bold;
+}
+
+/* Buttons */
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    width: 300px;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--bg-blueish1);
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--bg-blueish2);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .bannerTxt {
+        width: 80%;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .tag {
+        font-size: 1.2rem;
+    }
+    
+    .btn {
+        width: 260px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .bannerTxt {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        align-items: center;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+    
+    .tag {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        width: 240px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 20rem;
+    }
+
+    .bannerTxt {
+        width: 95%;
+        bottom: 1rem;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+    
+    .tag {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 12px;
+    }
+}

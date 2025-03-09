@@ -1,0 +1,42 @@
+.outerDiv {
+    width: 100%;
+    padding: 2rem 1rem; /* Added slight horizontal padding */
+    background-color: var(--bg-fcfcfc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerDiv {
+    width: 70%;
+    max-width: 1200px; /* Prevents excessive stretching on large screens */
+    text-align: center; /* Centers content */
+}
+
+.title {
+    margin: 0.5rem 0;
+    font-size: var(--font-title-sz1);
+    font-weight: var(--font-title-weight);
+    color: var(--color-primary, #333); /* Added default fallback color */
+    line-height: 1.4; /* Improved readability */
+}
+
+@media (max-width: 768px) {
+    .innerDiv {
+        width: 90%; /* Adjusts width for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .outerDiv {
+        padding: 1.5rem 0; /* Adjusted padding for smaller screens */
+    }
+
+    .innerDiv {
+        width: 95%; /* More space-efficient for mobile screens */
+    }
+
+    .title {
+        font-size: calc(var(--font-title-sz1) * 0.9); /* Slightly smaller text for mobile */
+    }
+}
